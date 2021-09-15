@@ -2,6 +2,8 @@
 
 ## Description: This is a professional Portfolio created using REACT.
 
+## Deployed URL: https://mighty-plateau-86631.herokuapp.com/#resume
+
 ## UI Screenshots:
 
 ![image](https://user-images.githubusercontent.com/79431276/133359485-45ef83ae-60ff-4d9e-a67e-3341cd357288.png)
