@@ -1,29 +1,31 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeSquare, fas, faMobileAlt, faEnvelope, faTree } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+library.add(fas);
+
+library.add(fas, faEnvelopeSquare, faMobileAlt);
 
 function About() {
     return (
         <section className="container">
-            <div className="about">
-                <div className="pic">
-                    <img className="pic" src={require(`../assets/images/`).default} alt="Sud Batra" />
-                </div>
-                <div className="text">
-                    <h2 className="mAll">Contact me</h2>
-                    <div className="mAll">
-                        <a href="mailto:sudhanshubatra.19@gmail.com">
-                            <FontAwesomeIcon icon={["fas", "envelope-square"]} size="1x" color="#607d8b" />
-                        </a> <a href="mailto:sudhanshubatra.19@gmail.com">sudhanshubatra.19@gmail.com</a>
-                    </div>
-                    <div className="mAll">
-                        <div>
-                            <FontAwesomeIcon icon={["fas", "mobile-alt"]} size="1x" color="#607d8b" /> +1 (416)-902-9121
+            <div className ="row">
+                 <div className ="col-6">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <h2 className="text">Contact Me</h2>
+                    <br />
+                    <FontAwesomeIcon icon={faEnvelope} size="3x" color="#000" />
+                        <p>sudhanshubatra.19@gmail.com</p>
+                    <FontAwesomeIcon icon={faMobileAlt} size="3x" color="#000" />
+                    <p>416.902.9121</p>
+                 </div>
+                 <div className ="col-6">
+                    <img className="pic img-fluid" src={require('../assets/images/sud.png').default} alt="Sud Batra" />
+                 </div>
 
-                        </div>
-
-                    </div>
-
-                </div>
             </div>
         </section>
     );
